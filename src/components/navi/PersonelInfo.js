@@ -22,12 +22,12 @@ export default function PersonelInfo() {
     return () => clearInterval(action);
   }, [dencrypt]);
   return (
-    <>
-      <div className="p-4">{naviInfo.main}</div>
-      <div className="p-4">
-        "I'm a full-stack" <span className={color.current}>{result}</span>{" "}
-        "developer"
+    <div className="absolute">
+      <div className="p-4 text-center">{naviInfo.main}</div>
+      <div className="p-4 text-center">
+        I'm a full-stack <span className={color.current}>{result}</span>
+        developer
       </div>
-    </>
+    </div>
   );
 }
